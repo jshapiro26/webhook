@@ -295,8 +295,8 @@ func hookHandler(w http.ResponseWriter, r *http.Request) {
 
 		fmt.Fprintf(w, "Hook rules were not satisfied.")
 	} else {
-		w.WriteHeader(http.StatusNotFound)
-		fmt.Fprintf(w, "Hook not found.")
+		w.WriteHeader(http.StatusOK)
+		fmt.Fprintf(w, "Fuck You google Health-check")
 	}
 }
 
